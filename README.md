@@ -1,44 +1,64 @@
-# My AWS Cloud Journey 🚀
+# My AWS Cloud Journey ☁️
 ### Indira Tiruveedhula | AWS Cloud Practitioner | Terraform Learner
 
-This repository documents my hands-on cloud infrastructure projects
-built while transitioning into Cloud Engineering.
+---
+
+## ✅ Project 1 — AWS Cloud Infrastructure (COMPLETED)
+
+### What I Built
+A complete AWS infrastructure from scratch including 
+networking, compute, storage and monitoring.
+
+### Architecture
+Internet
+│
+[S3 Static Website] ← Portfolio hosted on S3
+│
+[Internet Gateway]
+│
+[VPC: 10.0.0.0/16]
+├── Public Subnet (10.0.1.0/24) — us-east-1a
+│       └── EC2 Web Server (Apache)
+└── Private Subnet (10.0.2.0/24) — us-east-1b
+└── Reserved for databases/backend
+│
+[CloudWatch Dashboard]
+└── CPU, NetworkIn, NetworkOut monitoring
+└── Alarms → SNS Email Alerts
+
+### Services Used
+| Service | Purpose |
+|---|---|
+| Amazon S3 | Static website hosting |
+| Amazon VPC | Custom private network |
+| Amazon EC2 | Virtual web server (Apache) |
+| Amazon CloudWatch | Monitoring and alerting |
+| Amazon SNS | Email notifications |
+| Security Groups | Firewall rules |
+| Internet Gateway | VPC internet access |
+| Route Tables | Traffic routing |
+
+### Key Achievements
+- Hosted live static website on S3
+- Built VPC with public/private subnets from scratch
+- Launched EC2 in custom VPC with working web server
+- Set up real-time monitoring dashboard with email alerts
 
 ---
 
-## 📁 Projects
-
-### 1. AWS Cloud Infrastructure Setup
-**Tools:** AWS EC2, S3, VPC, IAM, CloudWatch
-- S3 static website hosting
-- Custom VPC with public and private subnets
-- EC2 web server setup
-- CloudWatch monitoring and alerts
-📂 [View Project](./project-1-aws)
+## 🔄 Project 2 — Terraform AWS Infrastructure (IN PROGRESS)
+Infrastructure as Code — provisioning AWS resources using Terraform
 
 ---
 
-### 2. Terraform AWS Infrastructure (IaC)
-**Tools:** Terraform, AWS
-- VPC, subnets, security groups using Terraform
-- Remote state management with S3 backend
-- Modular, reusable infrastructure code
-📂 [View Project](./project-2-terraform)
-
----
-
-### 3. CI/CD Pipeline — M.Tech Final Year Project
-**Tools:** Jenkins, Git, Bitbucket
-- End-to-end CI/CD pipeline implementation
-- Automated build, test, and deploy stages
-- Academic project — BITS Pilani, 2026
-📂 [View Project](./mtech-cicd-project)
+## ⏳ Project 3 — CI/CD Pipeline (Coming Soon)
+M.Tech Final Year Project — BITS Pilani 2026
 
 ---
 
 ## 🏆 Certifications
-- AWS Certified Cloud Practitioner (Mar 2026)
-- Terraform — In Progress
+- ✅ AWS Certified Cloud Practitioner (March 2026)
+- 🔄 Terraform — Currently Learning
 
 ## 📫 Connect
 - LinkedIn: linkedin.com/in/indira-tiruveedhula-b01000379
