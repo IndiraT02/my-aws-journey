@@ -9,23 +9,6 @@
 A complete AWS infrastructure from scratch including 
 networking, compute, storage and monitoring.
 
-### Architecture
-Internet
-│
-[S3 Static Website] ← Portfolio hosted on S3
-│
-[Internet Gateway]
-│
-[VPC: 10.0.0.0/16]
-├── Public Subnet (10.0.1.0/24) — us-east-1a
-│       └── EC2 Web Server (Apache)
-└── Private Subnet (10.0.2.0/24) — us-east-1b
-└── Reserved for databases/backend
-│
-[CloudWatch Dashboard]
-└── CPU, NetworkIn, NetworkOut monitoring
-└── Alarms → SNS Email Alerts
-
 ### Services Used
 | Service | Purpose |
 |---|---|
